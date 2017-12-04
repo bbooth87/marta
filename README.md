@@ -1,24 +1,39 @@
-# README
+# Marta
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A app that provides the Atlanta bus schedule based upon your location done in Tech Talent South
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Install [RVM](https://rvm.io/)
 
-* System dependencies
+cd into the marta directory and run the following commands
+```
+#Installing Ruby Version for progect
+rvm install "ruby-2.3.3"
 
-* Configuration
+#Changing into Ruby Version
+rvm ruby-2.3.3
 
-* Database creation
+#Installing Rails Version
+gem install rails -v 5.1.2
 
-* Database initialization
+#Installing MySql if not installed
+brew install mysql #or download MySQL installer for windows
 
-* How to run the test suite
+#Updating bundler
+bundle update
 
-* Services (job queues, cache servers, search engines, etc.)
+#Installing gems
+bundle install
 
-* Deployment instructions
 
-* ...
+#Create database
+rails db:create
+
+#Run migrations
+rails db:migrate
+
+#Run server
+rails s
+```
+
